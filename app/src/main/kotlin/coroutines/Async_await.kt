@@ -33,4 +33,6 @@ suspend fun returnTemperature():String {
 Neat! You created two coroutines that ran concurrently to get the
 forecast and temperature data. When they each completed, they returned a value.
 Then you combined the two return values into a single print statement: Sunny 30°C.
+
+A suspend function can be called only from another suspending function or from a coroutine.
 * */
