@@ -8,3 +8,6 @@ capacity of buffer is also a problem i.e. how much capacity to use.
 - So instead of thread blocking we use coroutines to suspend the consumer or producer as the need
 may be to handle run away condition.
 - Flows API helps us implement streams with async properties.
+- Flows has 2 type of operators - terminal and non-terminal.
+- terminal - start flow e.g collect , these terminal operators are all suspend.
+- non-terminal are all non-suspending function and also return a flow.

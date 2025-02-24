@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.flow
 
 //flow builder Lesson 1
 fun producer() = flow<Int>{
-    val list = listOf(1,2,3,4,5,6,7,7,8,8,8,9,23,56)
+    val list = listOf(1,2,3,4,5,6,7,8,9,23,56)
     list.forEach{
         delay(1000)//mimic db response delay
         emit(it)
