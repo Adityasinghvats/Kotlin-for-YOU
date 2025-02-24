@@ -11,3 +11,9 @@ may be to handle run away condition.
 - Flows has 2 type of operators - terminal and non-terminal.
 - terminal - start flow e.g collect , these terminal operators are all suspend.
 - non-terminal are all non-suspending function and also return a flow.
+---
+| ShareFlow                                                            | StateFlow                                | LiveData                               |
+|:---------------------------------------------------------------------|:-----------------------------------------|:---------------------------------------|
+| HotFlow but doesn't have a state.Can be executed on different thread | HotFlow but have a state with last data. | All operators are done on MainThread() |
+| More operators                                                       | More operators                           | Less Operators                         |
+| Lifecycle independent                                                | Lifecycle independent                    | Lifecycle dependent                    |
